@@ -1,0 +1,54 @@
+@import "../../styles//mixins.scss";
+.editor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  max-height: 75vh;
+
+  &__editBlock{
+    position: relative;
+    height: 45vh;
+    flex-grow: 1;
+    background-color: rgba(36, 36, 36, 0);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__button {
+    color: aliceblue;
+    position: absolute;
+    height: 50px;
+    bottom: 30px;
+    width: 150px;
+    @include adaptiv-value("font-size", 19, 15);
+    @include adaptiv-value("line-height", 19, 15);
+    left: calc(50vw - 170px);
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid aliceblue;
+    border-radius: 5px;
+    background-color: #ffffff00;
+    transition: 0.3s;
+    &:hover{
+      color: #296ded;
+      border: 3px solid #296ded;
+    }
+  }
+  &__settingRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    width: 90vw;
+
+    &__button {
+      left: calc(90vw - 170px);
+    }
+  }
+}

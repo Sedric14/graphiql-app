@@ -1,0 +1,26 @@
+.headers {
+  display: block;
+  margin: 10px 0;
+  &__headWrap {
+    height: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    padding: 0;
+    border: none;
+    z-index: 1;
+    line-height: 20px;
+    text-align: center;
+    background-color: #ffffff00;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: rotate(0);
+    transition: 0.3s;
+    &:hover{
+      color: #296ded;
+    }
+  }
+}

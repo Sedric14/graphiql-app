@@ -1,0 +1,5 @@
+@import "antd/dist/reset.css";
+@import "./mixins.scss";
+@import "bootstrap/dist/css/bootstrap-reboot.css";
+@import "bootstrap/dist/css/bootstrap-grid.css";
+@import "../routes/Welcome/welcome.scss", "../routes/SignPage/signPage.scss", "../routes/Main/main.scss";

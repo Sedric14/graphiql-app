@@ -1,0 +1,8 @@
+.response {
+  width: 40vw;
+
+  @media(max-width: 1000px){
+    width: 90vw;
+    color: #fdfdfd;
+  }
+}

@@ -1,0 +1,85 @@
+.main {
+  padding: 50px;
+  padding-top: 100px;
+  max-width: 100%;
+  margin: 0px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+  column-gap: 20px;
+
+  .cm-editor {
+    @include adaptiv-value("font-size", 20, 14);
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
+    max-height: calc(74vh - 40px);
+
+    .cm-gutters {
+      margin: 0;
+      color: #05050578;
+      background-color: #ffffff00;
+
+      @media (max-width: 750px) {
+        width: 50px;
+      }
+      @media (max-width: 400px) {
+        display: none;
+      }
+    }
+  }
+
+  .mainWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 73vh;
+    position: relative;
+    top: -3vh;
+    gap: 20px;
+
+    .response {
+      position: relative;
+      height: 77vh;
+      width: calc(40vw - 10px);
+      margin-left: 10px;
+
+      .respHeader {
+        display: none;
+      }
+
+      @media (max-width: 1000px) {
+        width: 90vw;
+        margin-left: 0;
+        margin-top: -10px;
+        height: fit-content;
+
+        .respHeader {
+          display: block;
+          padding-left: 20px;
+        }
+      }
+
+      .cm-editor {
+        max-height: 73vh;
+        height: calc(73vh);
+
+        @media (max-width: 1000px) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 5vh 5vw;
+    padding-top: 100px;
+  }
+}
